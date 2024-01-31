@@ -20,12 +20,6 @@ jobs:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
   security:
     runs-on: ubuntu-latest
-<<<<<<< HEAD
-    needs: build
-=======
-    # needs: build
-    
->>>>>>> ac869e8d3cffb3353b3b18cb33dbfd320991d587
     name: Run the SCA scan on the source code
     steps:
       - uses: actions/checkout@master
